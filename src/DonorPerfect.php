@@ -301,7 +301,7 @@ class DonorPerfect
      */
     public static function prepareMoney($value)
     {
-        $value = $this->prepareNumeric($value);
+        $value = $DonorPerfect::prepareNumeric($value);
 
         return number_format($value, 2, '.', '');
     }
